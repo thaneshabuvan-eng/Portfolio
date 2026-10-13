@@ -1,0 +1,217 @@
+body {
+  background-image: url("https://img.magnific.com/free-vector/blue-futuristic-waves-background-with-computer-code-technology_53876-119584.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.intro {
+  background-color: violet;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+  align-items: center;
+  border: 20px solid purple;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  row-gap: 15px;
+  align-items: start;
+  padding: 20px 60px;
+}
+
+.hero h1 {
+  grid-column: 1;
+  grid-row: 1;
+  color: violet;
+  text-shadow: 2px 2px purple;
+  margin: 0;
+}
+
+.hero > p {
+  grid-column: 1;
+  grid-row: 2;
+  color: violet;
+  max-width: 700px;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+}
+
+.hero .info {
+  grid-column: 1;
+  grid-row: 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 30px;
+  color: violet;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+.hero .info p {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+}
+
+.hero img {
+  grid-column: 2;
+  grid-row: 1 / span 3;
+  width: 100%;
+  align-self: center;
+}
+
+@media (max-width: 800px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  .hero h1,
+  .hero > p,
+  .hero .info,
+  .hero img {
+    grid-column: 1;
+    grid-row: auto;
+  }
+}
+.hero h1,
+.hero > p,
+.hero .info,
+.hero img {
+  transition: transform 0.15s ease;
+
+}
+
+.hero h1:active,
+.hero > p:active,
+.hero img {
+  cursor: pointer;
+}
+
+.hero h1:hover,
+.hero > p:hover,
+.hero .info:hover,
+.hero img:hover {
+  transform: scale(0.97);
+}
+.section-title {
+  color: violet;
+  text-shadow: 2px 2px purple;
+  padding: 20px 60px 0;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  padding: 20px 60px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(238, 130, 238, 0.3);
+  border-radius: 16px;
+  padding: 20px;
+  color: violet;
+  transition: transform 0.15s ease;
+}
+
+.card h2 { margin-top: 0; }
+.card a { color: violet; }
+
+.card:hover  { transform: translateY(-4px); }
+.card:active { transform: scale(0.97); }
+
+.badge {
+  display: inline-block;
+  font-size: 13px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.badge.python { background: #2f5fa8; color: white; }
+.badge.css    { background: purple; color: violet; }
+
+.skills-title {
+  color: violet;
+  text-shadow: 2px 2px purple;
+  padding: 20px 60px 0;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  padding: 20px 60px;
+}
+
+.skill-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(238, 130, 238, 0.3);
+  border-radius: 16px;
+  padding: 20px;
+  color: violet;
+  transition: transform 0.15s ease;
+}
+
+.skill-card h2 {
+  margin-top: 0;
+}
+
+.chip {
+  display: inline-block;
+  background: purple;
+  color: violet;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin: 4px 4px 4px 0;
+  font-size: 15px;
+}
+
+.skill-card:hover  { transform: translateY(-4px); }
+.skill-card:active { transform: scale(0.97); }
+
+.edu-title {
+  color: violet;
+  text-shadow: 2px 2px purple;
+  padding: 20px 60px 0;
+}
+
+.education {
+  padding: 20px 60px;
+  max-width: 800px;
+}
+
+.edu-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(238, 130, 238, 0.3);
+  border-left: 6px solid violet;
+  border-radius: 0 16px 16px 0;
+  padding: 18px 22px;
+  margin-bottom: 20px;
+  color: violet;
+  transition: transform 0.15s ease;
+}
+
+.edu-card h2 {
+  margin: 8px 0;
+}
+
+.edu-card p {
+  margin: 4px 0;
+}
+
+.year {
+  display: inline-block;
+  background: purple;
+  color: violet;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.edu-card:hover  { transform: translateX(6px); }
+.edu-card:active { transform: scale(0.98); }

@@ -1,0 +1,127 @@
+body {
+    background-image: url("https://img.magnific.com/free-vector/blue-futuristic-waves-background-with-computer-code-technology_53876-119584.jpg");
+    background-repeat: no-repeat;
+ background-size: cover;
+}
+.intro {
+    background-color: violet;
+
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+padding: 20px 20px ;
+align-items: center;
+border: 20px solid purple;
+    
+}
+.intro h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    display: flex;
+
+   
+
+
+}
+.intro nav{ 
+    display: flex;
+    gap: 20px;
+
+}
+.intro nav a{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+  display: inline;
+  text-decoration: underline;
+
+}
+img { 
+    width: 450px;
+    padding-left: 300px;
+
+}
+.hero{
+display: inline-flex;
+align-items: center;
+}
+.int {
+    
+   color: violet;
+    text-shadow: 4px 4px purple;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+
+    position: absolute;
+    top: 45%;
+    left: 50px;
+    transform: translateY(-50%);
+
+    width: 600px;
+     
+}
+ div p{
+    color: violet;
+    font-family:times;
+    width: 600px;
+    font-size: 25px;
+    margin:40px;
+    
+ }
+ .link {
+    background-color: purple;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+    border-radius: 15px;
+    color: violet;
+  text-align: center;
+ }
+ .link {
+ 
+  transition: transform 0.15s ease;
+  
+}
+.link:hover {color: white;
+background-color: blueviolet;}
+
+.link:active {
+  transform: scale(0.94);
+}
+.hero h1,
+.hero p,
+.hero img {
+  transition: transform 0.15s ease;
+}
+
+.hero h1:hover,
+.hero p:hover,
+.hero img:hover {
+  transform: scale(0.85);
+}
+.link i {
+  font-size: 32px;
+  color: violet;
+}
+
+.link {
+  margin-right: 15px;
+  text-decoration: none;
+}
+.social-icons {
+  text-align: center;
+  padding: 30px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 6px;
+  transition: transform 0.15s ease;
+}
+
+.social-icons i {
+  font-size: 36px;
+  color: violet;
+}
+
+.social-icons a:active {
+  transform: scale(0.9);
+}
